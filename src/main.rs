@@ -15,11 +15,10 @@ fn main() {
 }
 
 struct Grid {
-    grid: [[Cell ; GAME_X]; GAME_X],
+    grid: [[DEFAULT_CELL : Cell ; GAME_X]; GAME_X],
     
 }
-
-struct Cell {
+pub struct Cell {
     remaining_snake_frames: i32 ,
     has_food: bool ,
    
@@ -34,9 +33,9 @@ impl Grid {
         let grid_width = grid.grid[0].len();
 
        
-        for row_index in ..grid_height {
-            for cell_index in ..grid_width {
-                grid.grid[grid_height][grid_width] = DEFAULT_CELL;
+        for row_index in 0..grid_height {
+            for cell_index in 0..grid_width {
+                grid.grid[row_index][cell_index] = DEFAULT_CELL;
             }
         }
         grid
