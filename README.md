@@ -1,1 +1,1 @@
-###Rust snake game by Jorge Llaneza
+### Rust snake game by Jorge Llaneza
