@@ -1,1 +1,1 @@
-/home/jorge/Desktop/rust/snake_game_1/target/debug/snake_game_1: /home/jorge/Desktop/rust/snake_game_1/src/main.rs
+/home/jorge/Desktop/rust/rustSnakegame/target/debug/snake_game_1: /home/jorge/Desktop/rust/rustSnakegame/src/grid.rs /home/jorge/Desktop/rust/rustSnakegame/src/main.rs
