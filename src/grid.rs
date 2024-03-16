@@ -1,9 +1,9 @@
-use std::{intrinsics::mir::Len, vec::Vec};
+
 
 pub struct Cell {
-    snake_frames_left: i32,
-    is_snake_head: bool,
-    has_food: bool,
+    pub snake_frames_left: i32,
+    pub is_snake_head: bool,
+    pub has_food: bool,
 }
 
 pub struct Grid {
@@ -36,7 +36,10 @@ impl Grid {
         Grid {
             grid: vec![vec![DEFAULT_CELL ; width] ; height]
         }
+    }
 
+    pub fn get(&self ,row: usize, cell: usize) -> Cell {
+        self.grid[row][cell]
     }
     pub fn replace(&mut self, row: usize , cell_number: usize , to_replace: Cell) {
         self.grid[row][cell_number] = to_replace
