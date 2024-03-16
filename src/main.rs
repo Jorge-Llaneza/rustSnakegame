@@ -1,4 +1,6 @@
 mod grid;
+mod game;
+
 
 
 fn main() {

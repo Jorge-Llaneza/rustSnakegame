@@ -1,4 +1,4 @@
-use std::vec::Vec;
+use std::{intrinsics::mir::Len, vec::Vec};
 
 pub struct Cell {
     snake_frames_left: i32,
@@ -66,5 +66,13 @@ impl Grid {
             }
             println!("");
         }
+    }
+
+    pub fn get_width(&self) -> usize {
+        return self.grid[0].len()
+    }
+
+    pub fn get_height(&self) -> usize {
+        return self.grid.len()
     }
 }
